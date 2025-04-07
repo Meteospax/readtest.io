@@ -50,11 +50,11 @@ window.onload = function () {
 
 function checkTest() {
     let result = 0;
-    document.testForm.question1.value === '4' ? result += 1 : result;
-    document.testForm.question2.value === '1' ? result += 1 : result;
-    document.testForm.question3.value === '1' ? result += 1 : result;
-    document.testForm.question4.value === '3' ? result += 1 : result;
-    document.testForm.question5.value === '2' ? result += 1 : result;
+    document.testForm.question1.value === '1' ? result += 1 : result;
+    document.testForm.question2.value === '2' ? result += 1 : result;
+    document.testForm.question3.value === '3' ? result += 1 : result;
+    document.testForm.question4.value === '1' ? result += 1 : result;
+    document.testForm.question5.value === '3' ? result += 1 : result;
     return Math.round(result * 100 / 5);
 }
 
