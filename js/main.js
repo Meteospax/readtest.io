@@ -43,7 +43,6 @@ window.onload = function () {
     testSubmit.onclick = function () {
         test.classList.add('invisible');
         result.classList.remove('invisible');
-        console.log(document.testForm);
         document.querySelector('.quality').innerHTML = `${checkTest()}`;
     }
 
