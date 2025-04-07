@@ -73,10 +73,10 @@ function countWordsAndSymb(textHtml) {
     }
     let newArr = string.split(' ').filter(elem => elem.length && elem !== '\n' && elem !== '—');
     let symb = newArr.reduce((acc, elem) => {
-        if (elem[elem.length - 2] === '.') {
+        if (elem.length >= 2 && elem[elem.length - 2] === '.') {
             return acc + elem.length - 2;
         }
-        else if (elem[elem.length - 1] === '.' || elem[elem.length - 1] === '\n') {
+        else if (elem.length >= 1 && (elem[elem.length - 1] === '.' || elem[elem.length - 1] === '\n')) {
             return acc + elem.length - 1;
         }
         return acc + elem.length;
